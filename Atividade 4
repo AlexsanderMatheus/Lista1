@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    char resposta_correta;
+    char resposta_usuario;
+
+    char pergunta[100];
+    char alternativas[5][50]; // Array bidimensional para armazenar as 5 alternativas
+
+    // Imprime a pergunta
+    printf("Digite a pergunta: ");
+    scanf(" %[^\n]s", pergunta); // Leitura da pergunta como uma string
+
+    // Apresenta as alternativas
+    printf("Digite as 5 alternativas:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%c) ", 'a' + i); // Mostra a letra da alternativa
+        scanf(" %[^\n]s", alternativas[i]); // Leitura da alternativa como uma string
+    }
+
+    // Armazena a letra correspondente à resposta correta
+    printf("Digite a letra correspondente à resposta correta (a, b, c, d ou e): ");
+    scanf(" %c", &resposta_correta);
+
+    // Solicita a resposta do usuário
+    printf("Digite sua resposta: ");
+    scanf(" %c", &resposta_usuario);
+
+    // Exibe a resposta do usuário e a resposta correta
+    printf("Você respondeu alternativa %c. A resposta correta é a alternativa %c.\n", resposta_usuario, resposta_correta);
+
+    return 0;
+}
