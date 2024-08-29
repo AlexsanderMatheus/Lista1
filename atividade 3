@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char resposta_correta = 'a';
+    char resposta_usuario;
+
+    // Imprime a pergunta
+    printf("Qual é o verdadeiro nome do super-herói Batman?\n");
+    
+    // Apresenta as alternativas
+    printf("a) Bruce Wayne\n");
+    printf("b) Clark Kent\n");
+    printf("c) Peter Parker\n");
+    printf("d) Tony Stark\n");
+    printf("e) Steve Rogers\n");
+    
+    // Armazena a letra correspondente à resposta correta
+    
+    // Solicita a resposta do usuário
+    printf("Digite sua resposta: ");
+    scanf(" %c", &resposta_usuario);
+    
+    // Exibe a resposta do usuário e a resposta correta
+    printf("Você respondeu alternativa %c. A resposta correta é a alternativa %c.\n", resposta_usuario, resposta_correta);
+
+    return 0;
+}
+
