@@ -1,0 +1,7 @@
+print("Olá Mundo!")
+
+<?php
+echo "Olá Mundo!";
+?>
+
+console.log("Olá Mundo!");
